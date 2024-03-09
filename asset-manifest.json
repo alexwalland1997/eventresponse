@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/eventresponse/static/css/main.356545d0.css",
+    "main.js": "/eventresponse/static/js/main.df96fc7b.js",
+    "index.html": "/eventresponse/index.html",
+    "main.356545d0.css.map": "/eventresponse/static/css/main.356545d0.css.map",
+    "main.df96fc7b.js.map": "/eventresponse/static/js/main.df96fc7b.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.356545d0.css",
+    "static/js/main.df96fc7b.js"
+  ]
+}

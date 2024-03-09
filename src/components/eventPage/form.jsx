@@ -56,6 +56,7 @@ export default function Form() {
         <iframe
           src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2466.1022672443964!2d0.7942248765387204!3d51.82256227188666!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47d91d16a33f1d9b%3A0xd075cbfdc783b725!2sLayer%20Marney%20Tower%20Weddings!5e0!3m2!1sen!2suk!4v1710008834105!5m2!1sen!2suk"
           id="venue"
+          title="venu"
           width="300"
           height="300"
           allowfullscreen=""

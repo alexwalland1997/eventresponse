@@ -1,6 +1,7 @@
 {
   "name": "eventresponse",
   "version": "0.1.0",
+  "homepage": "https://alexwalland1997.github.io/eventresponse",
   "private": true,
   "dependencies": {
     "@emailjs/browser": "^4.3.3",
@@ -11,6 +12,7 @@
     "add-to-calendar-button-react": "^2.6.0",
     "autoprefixer": "^10.4.17",
     "flowbite-react": "^0.7.2",
+    "gh-pages": "^6.1.1",
     "postcss": "^8.4.35",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
@@ -19,10 +21,12 @@
     "web-vitals": "^2.1.4"
   },
   "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject"
+     "predeploy": "npm run build",
+     "deploy": "gh-pages -d build",
+     "start": "react-scripts start",
+     "build": "react-scripts build",
+     "test": "react-scripts test",
+     "eject": "react-scripts eject"
   },
   "eslintConfig": {
     "extends": [

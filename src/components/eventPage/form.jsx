@@ -1,10 +1,11 @@
 import { Label, Textarea, TextInput, Button, Select } from "flowbite-react";
-import React, { useRef } from 'react';
+import React, { useRef, useState } from 'react';
 import { AddToCalendarButton } from "add-to-calendar-button-react";
 import emailjs from "@emailjs/browser"
 
 export default function Form() {
   const form = useRef();
+  const [disable, setDisable] = useState(false)
 
   const sendEmail = (e) =>{
     e.preventDefault();
@@ -17,12 +18,13 @@ export default function Form() {
         )
         .then (
             () => {
+              setDisable(true);
             },
             () => {
-                alert('Error message not sent');
             }
         )
         e.target.reset();
+        
 
   }
 
@@ -42,7 +44,7 @@ export default function Form() {
             </Select>
           </div>
           <div className="mb-4 block">
-            <Label htmlFor="allergies" value="Please list any allergies" />
+            <Label htmlFor="allergies" value="Please list any allergies as well as your meal choice" />
             <Textarea
               id="allergies"
               name="allergies"
@@ -50,7 +52,7 @@ export default function Form() {
               placeholder="Leave any allergies"
             />
           </div>
-          <Button type="submit" id="submit">Submit</Button>
+          <Button type="submit" id="submit" disabled={disable}>Submit</Button>
         </form>
       </div>
       <div id="info">

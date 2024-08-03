@@ -34,7 +34,7 @@ export default function Form() {
         <form ref={form} onSubmit={sendEmail}>
           <div className="mb-4 block">
             <Label htmlFor="name" value="Name/Family Name" />
-            <TextInput id="name" name="name" />
+            <TextInput id="name" name="name" required/>
           </div>
           <div className="mb-4 block">
             <Label htmlFor="attendance" value="Are you able to attend" />
@@ -49,6 +49,7 @@ export default function Form() {
               id="allergies"
               name="allergies"
               rows="10"
+              required
             />
           </div>
           <Button type="submit" id="submit" disabled={disable}>Submit</Button>

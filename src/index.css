@@ -2,34 +2,44 @@
 @tailwind components;
 @tailwind utilities;
 
+@font-face {
+  font-family: "Andasia";
+  src: url(imagesfonts/Andasia.ttf) format("truetype");
+}
+
 body {
   margin: 0;
-  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-  background-color: #6EE7B7;
+  font-family: "Cambria, Cochin, Georgia, Times, 'Times New Roman', serif";
+  /*background-color: #6EE7B7;*/
+  background-image: url(imagesfonts/bg2.png);
+  background-repeat: none;
+  background-size: cover;
 }
 
 .cForm {
   margin-left: 100px;
-  margin-top: 50px;
+  padding-top: -50px;
   padding-right: 50px;
   display: inline-block;
   width: 40%;
+  position: relative;
+  top: -50px;
 }
 
 #inviteBtn {
-  padding-left:250px;
+  padding-left:300px;
   position: relative;
   top: -20px;
 }
 
 #info {
+  margin-top: 50px;
   width: 30%;
   display: inline-block;
 }
 
 #venue {
   position: relative;
-  top: -50px;
   right: -150px;
 }
 
@@ -37,37 +47,51 @@ body {
   width: 100%;
   height: 120px;
   padding-top: 20px;
-  background-color: #D1FAE5;
+  margin-bottom: 30px;
+  /*background-color: rgb(235, 229, 229);*/
+  background-image: url(imagesfonts/background.png);
+  background-repeat: none;
+  background-size: cover;
 }
 
-h1,
-h2 {
-  font-size: 25px;
+h1{
+  font-family: Andasia;
+  font-size: 30px;
   text-align: center;
+  letter-spacing: 2px;
+  color: #8e9d88;
 }
 
 #name,
 #attendance,
 #allergies {
-  background-color: #D1FAE5;
+  margin-top: 5px;
+  background-color: #ffffff;
+  border: #8DBB8D 2px solid;
+  box-shadow: 0 6px 4px -4px black;
 }
 
 #submit {
+  margin-top: 10px;
   float: right;
+  background-color: #E1E6E0;
+  border: #8DBB8D 2px solid;
+  letter-spacing: 1px;
 }
 
-@media screen  and (max-width: 800px){
-  h1,
-  h2 {
-    font-size: 18px;
-  }  
+iframe {
+  padding-bottom: 50px;
+}
+
+@media screen  and (max-width: 800px){ 
   #invite{
     width: 100%;
   }
   .cForm {
     width: 90% ;
     padding-bottom: 50px;
-    margin-left: 25px;
+    margin-left: 30px;
+    top: 0px;
   }
   #info {
     width: 95%;
@@ -81,13 +105,15 @@ h2 {
     left: 0;
   }
   #inviteBtn {
-    padding-left: 75px;
+    padding-left: 30%;
     position: relative;
     top: 20px;
     padding-bottom: 25px;
   }
 
   iframe {
-    width: 300px;
+    width: 600px;
+    padding-left: 10%;
   }
+
 }
